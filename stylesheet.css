@@ -1,0 +1,84 @@
+body {
+    background-color: #E7ECF2;
+    color: #334155;
+    padding: 5px;
+}
+
+.cardUI {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    box-sizing: border-box;
+}
+
+.titlemessage {
+    background-color: #276FA9;
+    color: white;
+    border-radius: 8px;
+    line-height: 1.2;
+    margin: 0 auto;
+    padding: 5px 20px; 
+}
+
+.message {
+    line-height: 1.7;
+    border-bottom: solid #DBE3ED 1.5px; 
+    padding-bottom: 10px;
+}
+
+.aboutme {
+    padding-bottom: 20px;
+    border-bottom: solid #DBE3ED 1.5px;
+}
+
+h2 {
+    color: #2270AC;
+}
+
+.favorite_list {
+    background-color: #EEF3FB;
+    border-radius: 8px;
+    padding: 10px 30px;
+}
+
+.sportcar {
+    background-color: #E3E8EF;
+    width: 100%;
+    height: auto;
+}
+
+.githublink {
+    color: #2563EB;
+    
+}
+
+.githublink:hover {
+    color: #1D4ED8;
+}
+
+.githublink:active {
+    color: #1E3A8A;
+}
+
+.history {
+    color: #2563EB;
+    font-size: 20px;
+}
+
+table {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    color: #334155;
+}
+
+th, td {
+    padding: 12px 16px;
+}
+
+tr {
+    border-bottom: solid #DBE3ED 1.5px;
+}
