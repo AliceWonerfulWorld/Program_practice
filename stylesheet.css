@@ -15,16 +15,26 @@ body {
 }
 
 .titlemessage {
-    background-color: #276FA9;
     color: white;
     border-radius: 8px;
-    line-height: 1.2;
+    line-height: 1;
     margin: 0 auto;
     padding: 5px 20px; 
+    background: linear-gradient(to right, #2563EB,#8754D1,#EC4899);
+    position: relative;
+}
+
+.studybadge {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #7F1184;
+    border-radius: 99px;
+    padding: 8px;
 }
 
 .message {
-    line-height: 1.7;
+    line-height: 1.5;
     border-bottom: solid #DBE3ED 1.5px; 
     padding-bottom: 10px;
 }
@@ -35,28 +45,95 @@ body {
 }
 
 h2 {
-    color: #2270AC;
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+    background-color: blue;
+    width: 10px;
+    height: 40px;
+    border-radius: 200px;
+    margin-right: 10px;
 }
 
 .favorite_list {
-    background-color: #EEF3FB;
     border-radius: 8px;
-    padding: 10px 30px;
+    padding: 10px 20px;
+    list-style: none;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.favorite_list li{
+    padding: 10px 20px;
+}
+
+.favorite_list li::before {
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.favorite_list li:nth-child(1)::before {
+    content: "💻";
+}
+
+.favorite_list li:nth-child(1) {
+    background-color: #EEF3FB;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.favorite_list li:nth-child(2)::before {
+    content: "🎮";
+} 
+
+
+.favorite_list li:nth-child(3)::before {
+    content: "🚘";
+} 
+
+.favorite_list li:nth-child(3) {
+    background-color: #EEF3FB;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .sportcar {
     background-color: #E3E8EF;
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .githublink {
-    color: #2563EB;
-    
+    color: white;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    background: linear-gradient(to right, #2563EB,#8754D1,#EC4899);
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 15px 30px;
+    margin-top: 10px;
+    border-radius: 50px;
+    transition-duration: .4s;
+}
+
+.githublink::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-image: url('img/github.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .githublink:hover {
-    color: #1D4ED8;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
 }
 
 .githublink:active {
