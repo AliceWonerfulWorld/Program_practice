@@ -12,6 +12,7 @@ body {
     width: 100%;
     max-width: 1200px;
     box-sizing: border-box;
+    box-shadow: 10px 10px 15px -10px;
 }
 
 .titlemessage {
@@ -44,12 +45,12 @@ body {
     border-bottom: solid #DBE3ED 1.5px;
 }
 
-h2 {
+ h2 {
     display: flex;
     align-items: center;
 }
 
-h2::before {
+ h2::before {
     content: '';
     display: inline-block;
     background-color: blue;
@@ -58,6 +59,7 @@ h2::before {
     border-radius: 200px;
     margin-right: 10px;
 }
+
 
 .favorite_list {
     border-radius: 8px;
@@ -102,8 +104,10 @@ h2::before {
 .sportcar {
     background-color: #E3E8EF;
     width: 100%;
-    height: auto;
+    height: 300px;
     border-radius: 10px;
+    box-shadow: 5px 5px 4px;
+    object-fit: cover;
 }
 
 .githublink {
@@ -142,9 +146,19 @@ h2::before {
     color: #1E3A8A;
 }
 
-.history {
-    color: #2563EB;
-    font-size: 20px;
+.history::before {
+   width:  6px;
+   height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.study-table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px -10px;
 }
 
 table {
@@ -152,6 +166,19 @@ table {
     width: 100%;
     border-collapse: collapse;
     color: #334155;
+}
+
+table th:first-child, table td:first-child {
+    text-align:center;
+}
+
+thead tr {
+    color: white;
+    background-color: #276FA9;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: #EEF3FB;
 }
 
 th, td {
